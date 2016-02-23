@@ -1,0 +1,46 @@
+/*common style*/
+body {
+  margin :0;
+  color: #555;
+	font:17px "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+img {
+		border: none;/*取消老的浏览器出现图片加载之后的默认border*/
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom:1;
+}
+/* Markdown style */
+.md-html {
+	width: 960px;
+  height: 1366px;
+	margin: 0 auto;
+  border-style: 960px solid #00BCD4;
+  position: relative;
+}
+
+.md-html h3 {
+  color: #3CDBDC;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: #3CDBDC;
+}
+
+.md-html img {
+    height: 160px;
+    width: 140px;
+    position: absolute;
+    top: 96px;
+    right: 50px;
+}
+
+

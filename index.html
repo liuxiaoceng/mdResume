@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>刘小曾的简历</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="main">
+    <pre class="md-content" style="display: none">
+
+## 求职意向 : Web前端开发工程师
+
+### 基本资料
+
+* 姓名 : 刘曾  
+* 学历 : 西安邮电大学  软件工程（本科）  2012级  
+* 手机号码 : 13659186294  
+* 电子邮箱 : liuxiaoceng@hotmail.com
+* Github 地址 : [https://github.com/liuxiaoceng](https://github.com/liuxiaoceng)
+
+![my picture](me.png)
+
+### 个人技能
+
+* 熟练使用 HTML、CSS 进行网页设计,对内容和表现的分离有深刻理解
+* 熟悉 Javascript 、JSON, 掌握 Ajax 异步通信技术  
+* 可熟练使用 jquery 库进行开发  
+* 了解 Web 标准、语义化相关概念，处理简单的浏览器兼容问题  
+* 熟悉 C 语言与数据结构相关概念以及算法  
+* 熟悉 Mysql 数据库相关的基本概念以及相关操作(查询、删除、更新)等  
+* 会使用 git, 使用 github 进行项目托管 
+
+### 项目经历
+
+* 2015/7-2015/8 -- viewPic   
+  项目地址 : [https://github.com/liuxiaoceng/viewPic](https://github.com/liuxiaoceng/viewPic)  
+  项目描述 : 一个本地图片浏览器，给你幻灯片的阅读体验  
+
+
+### 个人荣誉
+
+#### 担任职务
+
+* 计算机学院软件协会副会长  
+* 计算机学院2014级软件1401班学生班主任  
+
+#### 荣誉证书
+
+* 2012-2013学年  国家励志奖学金  
+* 2012-2013学年  校级运动会女子跳远第四名  
+* 2013-2014学年  国家励志奖学金  
+* 2013-2014学年  三好学生  
+* 2013-2014学年  第七届“挑战杯”校级二等奖  
+* 2013-2014学年  第二届“百科知识竞赛”校级二等奖  
+* 2013-2014学年  以“以德修身，书香校园”为主题的读书笔记院级二等奖  
+* 2014-2015学年  国家励志奖学金  
+* 2014-2015学年  三好学生  
+* 2014-2015学年  第五届汇编语言程序设计校级一等奖  
+
+### 自我评价
+
+1. 热爱网页设计与开发,善于发现网页中的美  
+2. 活泼开朗、有社会责任心 , 经常参加学生会、学校等组织的支教活动、敬老院活动以及救助站活动  
+3. 具有良好的自学能力,乐于学习新技术  
+
+
+    </pre>
+    <div class="md-html"></div>
+  </div>
+  <script src="libs/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="libs/marked/marked.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(function(){
+        var eMdContent = $(".md-content");
+        var eMdHtml = $(".md-html");
+
+        if (eMdContent.length > 0) {
+          var tMdContent = eMdContent.html();
+          eMdContent.remove();
+          var tMdHtml = marked(tMdContent, function(err, html){
+            return html;
+          })
+          eMdHtml.html(tMdHtml);
+        } else {
+          eMdHtml.html("<h2>暂时没有内容</h2>")
+        }
+    })
+  </script>
+</body>
+</html>
