@@ -43,4 +43,13 @@ img {
     right: 50px;
 }
 
+.md-html a,
+.md-html a:visited {
+    color: #0FBBBB;
+    text-decoration: none;
+}
+
+.md-html a:hover {
+  color: #1CB51C;
+}
 
