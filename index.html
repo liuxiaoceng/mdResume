@@ -96,8 +96,28 @@
           var tMdHtml = marked(tMdContent, function(err, html){
             return html;
           })
+          // 设置生成的 HTML 到网页中
           eMdHtml.html(tMdHtml);
+
+          // 使所有从新的标签页打开
           $('a').attr("target","_blank");
+
+          /*
+           微调 个人荣誉 css
+           */
+          $($(".md-html h4")[1]).css({
+            position: "absolute",
+            left: "450px",
+            top: "872px"
+          });
+
+          $($(".md-html h4+ul")[1]).css({
+            position: "absolute",
+            left: "450px",
+            top: "920px"
+          });
+
+          $($(".md-html h4+ul+h3")).css("margin-top", "190px");          
         } else {
           eMdHtml.html("<h2>暂时没有内容</h2>")
         }
